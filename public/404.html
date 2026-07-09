@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictor</title>
+  <script>
+    // Перенаправляем все запросы на index.html для SPA
+    const path = window.location.pathname;
+    if (path !== '/Dictor-rez/' && path !== '/Dictor-rez/index.html') {
+      window.location.replace('/Dictor-rez/');
+    }
+  </script>
+  <meta http-equiv="refresh" content="0;url=/Dictor-rez/">
+</head>
+<body>
+  <p>Redirecting to <a href="/Dictor-rez/">Dictor</a>...</p>
+</body>
+</html>
